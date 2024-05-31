@@ -35,7 +35,6 @@ def read_taxi_trips_write_to_bronze():
     df.write.format("delta").mode("overwrite").option(
         "overwriteSchema", "true"
     ).option("path", path).saveAsTable(table_name)
-    2de2
 
 # COMMAND ----------
 
